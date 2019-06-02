@@ -5,11 +5,13 @@ import GoogleLogin from 'react-google-login';
 import GoogleLogout from 'react-google-login';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+//import { AppRegistry, View, Image } from 'react-native';
 
 //import carRead from './components/carRead';
 import Menu from './components/Menu';
 
 import logo from './logo.svg';
+import car_image from './car_image.jpg';
 import './App.css';
 
 /*class App extends Component {
@@ -79,9 +81,9 @@ class App extends Component {
                     <Route path="/menu" exact component={Menu} />
 
                 </div>
-
-
+                <img src={car_image} className={"App-image"}  alt="logo" />
             </Router>
+
 
         );
     }

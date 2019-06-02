@@ -8,6 +8,12 @@
   pointer-events: none;
 }
 
+.App-image{
+  height: 680px;
+  width: 1100px;
+  position:static;
+}
+
 .App-header {
   background-color: rgba(52, 36, 2, 0.21);
   min-height: 100vh;
