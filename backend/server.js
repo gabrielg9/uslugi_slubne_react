@@ -71,10 +71,13 @@ carRoutes.route('/update/:id').post(function(req, res) {
         if (!car)
             res.status(404).send("data is not found");
         else
-            car.car_name = req.body.car_name;
-        car.car_price = req.body.car_price;
-        car.car_type = req.body.car_type;
-        car.car_availability = req.body.car_availability;
+        {
+            car.name = req.body.name;
+            car.price = req.body.price;
+            car.type = req.body.type;
+            car.availability = req.body.availability;
+        }
+
 
         car.save().then(car => {
             res.json('Car updated!');

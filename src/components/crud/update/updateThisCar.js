@@ -13,10 +13,10 @@ export default class EditCar extends Component {
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
-            car_name: '',
-            car_price: '',
-            car_type: '',
-            car_availability: ''
+            name: '',
+            price: '',
+            type: '',
+            availability: ''
         }
     }
 
@@ -24,55 +24,15 @@ export default class EditCar extends Component {
         axios.get('http://localhost:4000/products/'+this.props.match.params.id)
             .then(response => {
                 this.setState({
-                    car_name: response.data.car_name,
-                    car_price: response.data.car_price,
-                    car_type: response.data.car_type,
-                    car_availability: response.data.car_availability
+                    name: response.data.name,
+                    price: response.data.price,
+                    type: response.data.type,
+                    availability: response.data.availability
                 })
             })
             .catch(function (error) {
                 console.log(error);
             })
-    }
-
-    onChangeCarName(e) {
-        this.setState({
-            car_name: e.target.value
-        });
-    }
-
-    onChangeCarPrize(e) {
-        this.setState({
-            car_price: e.target.value
-        });
-    }
-
-    onChangeCarType(e) {
-        this.setState({
-            car_type: e.target.value
-        });
-    }
-
-    onChangeCarAvailability(e) {
-        this.setState({
-            car_availability: e.target.value
-        });
-    }
-
-
-    onSubmit(e) {
-        e.preventDefault();
-        const obj = {
-            car_name: this.state.car_name,
-            car_price: this.state.car_price,
-            car_type: this.state.car_type,
-            car_availability: this.state.car_availability
-        };
-        console.log(obj);
-        axios.post('http://localhost:4000/products/update/'+this.props.match.params.id, obj)
-            .then(res => console.log(res.data));
-
-        this.props.history.push('/');
     }
 
     render() {
@@ -84,7 +44,7 @@ export default class EditCar extends Component {
                         <label>Car Name: </label>
                         <input  type="text"
                                 className="form-control"
-                                value={this.state.car_name}
+                                value={this.state.name}
                                 onChange={this.onChangeCarName}
                         />
                     </div>
@@ -93,7 +53,7 @@ export default class EditCar extends Component {
                         <input
                             type="number" min="1"
                             className="form-control"
-                            value={this.state.car_price}
+                            value={this.state.price}
                             onChange={this.onChangeCarPrize}
                         />
                     </div>
@@ -102,7 +62,7 @@ export default class EditCar extends Component {
                         <input
                             type="text"
                             className="form-control"
-                            value={this.state.car_type}
+                            value={this.state.type}
                             onChange={this.onChangeCarType}
                         />
                     </div>
@@ -111,7 +71,7 @@ export default class EditCar extends Component {
                         <input
                             type="number" min="1"
                             className="form-control"
-                            value={this.state.car_availability}
+                            value={this.state.availability}
                             onChange={this.onChangeCarAvailability}
                         />
                     </div>
@@ -126,4 +86,46 @@ export default class EditCar extends Component {
             </div>
         )
     }
+
+    onChangeCarName(e) {
+        this.setState({
+            name: e.target.value
+        });
+    }
+
+    onChangeCarPrize(e) {
+        this.setState({
+            price: e.target.value
+        });
+    }
+
+    onChangeCarType(e) {
+        this.setState({
+            type: e.target.value
+        });
+    }
+
+    onChangeCarAvailability(e) {
+        this.setState({
+            availability: e.target.value
+        });
+    }
+
+
+    onSubmit(e) {
+        e.preventDefault();
+        const obj = {
+            name: this.state.name,
+            price: this.state.price,
+            type: this.state.type,
+            availability: this.state.availability
+        };
+        console.log(obj);
+        axios.post('http://localhost:4000/products/update/'+this.props.match.params.id, obj)
+            .then(res => console.log(res.data));
+
+        this.props.history.push('/');
+    }
+
+
 }
