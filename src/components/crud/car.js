@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import carRead from "./read/carRead";
 import addCar from './create/addCar';
 import deleteCar from "./delete/deleteCar";
+import updateCar from "./update/updateCar";
 
 
 class car extends Component {
@@ -35,11 +36,18 @@ class car extends Component {
                             <Button variant="secondary">Delete car</Button>
                         </Link>
                     </li>
+
+                    <li className="nav-link">
+                        <Link to="/menu/CRUD/car/update" >
+                            <Button variant="secondary">Update</Button>
+                        </Link>
+                    </li>
                 </ButtonToolbar>
 
                 <Route path="/menu/CRUD/car/readCar" exact component={carRead} />
                 <Route path="/menu/CRUD/car/addCar" exact component={addCar} />
                 <Route path="/menu/CRUD/car/deleteCar" exact component={deleteCar} />
+                <Route path="/menu/CRUD/car/update" exact component={updateCar} />
             </Router>
         )
     }

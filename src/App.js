@@ -81,7 +81,7 @@ class App extends Component {
                     <Route path="/menu" exact component={Menu} />
 
                 </div>
-                <img src={car_image} className={"App-image"}  alt="logo" />
+                <img src={car_image} className={"App-image"}  alt="fireSpot" />
             </Router>
 
 
