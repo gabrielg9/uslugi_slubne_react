@@ -29,6 +29,17 @@ commentRoutes.route('/').get(function(req, res) {
     });
 });
 
+commentRoutes.route('/add').post(function(req, res) {
+    let com = new Comment(req.body);
+    com.save()
+        .then(car => {
+            res.status(200).json({'comment': 'comment added successfully'});
+        })
+        .catch(err => {
+            res.status(400).send('adding new comment failed');
+        });
+});
+
 
 
 app.use('/comments', commentRoutes);
