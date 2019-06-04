@@ -35,17 +35,6 @@ carRoutes.route('/:id').get(function(req, res) {
     });
 });
 
-/*carRoutes.route('/type').get(function (req, res, next) {
-    Car.find({type:req.body.type})
-        .then(One=>{
-            res.json(One);
-        })
-        .catch(err=>{
-            res.status(400).send('Product not exist');
-        });
-
-});*/
-
 carRoutes.route('/type').post(async (req, res)=> {
     await Car.findOne({
         type:req.body.type})
@@ -102,7 +91,6 @@ carRoutes.route('/delete/:id').delete(function (req, res, next) {
 
     });
 });
-
 
 
 app.use('/products', carRoutes);

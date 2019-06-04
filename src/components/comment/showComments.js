@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-const Cars = props => (
+const Comments = props => (
     <tr>
-        <td>{props.car.name}</td>
-        <td>{props.car.price}</td>
-        <td>{props.car.type}</td>
-        <td>{props.car.availability}</td>
-
+        <td>{props.comment.userId}</td>
+        <td>{props.comment.postedDate}</td>
+        <td>{props.comment.body}</td>
     </tr>
 )
 
 class productsRead extends Component{
     constructor(props) {
         super(props);
-        this.state = {cars: []};
+        this.state = {comments: []};
         this.handleChange=this.handleChange.bind(this);
         //this.handleSubmit=this.handleSubmit.bind(this);
     }
@@ -23,7 +21,7 @@ class productsRead extends Component{
         this.setState({[e.target.name]:e.target.value});
     }
 
-   /* handleSubmit(e){
+    /*handleSubmit(e){
         e.preventDefault();
         const car={
             type:this.state.type
@@ -32,36 +30,35 @@ class productsRead extends Component{
     }*/
 
     componentDidMount() {
-        axios.get('http://localhost:4000/products/')
+        axios.get('http://localhost:4001/comments/')
             .then(response => {
-                this.setState({ cars: response.data });
+                this.setState({ comments: response.data });
             })
             .catch(function (error){
                 console.log(error);
             })
     }
 
-    carList() {
-        return this.state.cars.map(function(currentCar, i){
-            return <Cars car={currentCar} key={i} />;
+    commentList() {
+        return this.state.comments.map(function(currentComment, i){
+            return <Comments comment={currentComment} key={i} />;
         })
     }
 
     render() {
         return (
             <div>
-                <h3>List of products</h3>
+                <h3>Comments </h3>
                 <table className="table table-bordered" style={{ marginTop: 20 }} >
                     <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Type</th>
-                        <th>Availability</th>
+                        <th>From</th>
+                        <th>Date</th>
+                        <th>Body</th>
                     </tr>
                     </thead>
                     <tbody>
-                    { this.carList() }
+                    { this.commentList() }
                     </tbody>
                 </table>
             </div>
