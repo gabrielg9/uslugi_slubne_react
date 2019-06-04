@@ -28,20 +28,21 @@ carRoutes.route('/').get(function(req, res) {
     });
 });
 
+carRoutes.route('/type').post( function (req, res,next) {
+    Car.find({type:req.body.type})
+        .then(One =>{
+            res.json(One);
+        })
+        .catch(err => {
+            res.status(400).send('car doesnt exist');
+        });
+});
+
 carRoutes.route('/:id').get(function(req, res) {
     let id = req.params.id;
     Car.findById(id, function(err, car) {
         res.json(car);
     });
-});
-
-carRoutes.route('/type').post(async (req, res)=> {
-    await Car.findOne({
-        type:req.body.type})
-        .then(One=>{
-            res.json(One);
-        })
-
 });
 
 carRoutes.route('/add').post(function(req, res) {

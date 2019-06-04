@@ -19,11 +19,13 @@ const Cars = props => (
 class carDelete extends Component{
     constructor(props) {
         super(props);
-        this.state = {cars: []};
+        this.state = {
+            type:'car',
+            cars: []};
     }
 
     componentDidMount() {
-        axios.get('http://localhost:4000/products/')
+        axios.post('http://localhost:4000/products/type',{type:'car'})
             .then(response => {
                 this.setState({ cars: response.data });
             })

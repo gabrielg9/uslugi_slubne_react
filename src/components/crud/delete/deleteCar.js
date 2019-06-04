@@ -23,7 +23,7 @@ class carDelete extends Component{
     }
 
     componentDidMount() {
-        axios.get('http://localhost:4000/products/')
+        axios.post('http://localhost:4000/products/type',{type:'car'})
             .then(response => {
                 this.setState({ cars: response.data });
             })
