@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ea0d767-d69e-4abb-9730-aa31c02e139d" name="Default Changelist" comment="Read comments">
+    <list default="true" id="8ea0d767-d69e-4abb-9730-aa31c02e139d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/serverComment.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/serverComment.js" afterDir="false" />
     </list>
@@ -42,7 +42,7 @@
           <entry key="html" value="2" />
           <entry key="ico" value="1" />
           <entry key="jpg" value="2" />
-          <entry key="js" value="106" />
+          <entry key="js" value="114" />
           <entry key="json" value="9" />
           <entry key="svg" value="6" />
           <entry key="ts" value="1" />
@@ -54,7 +54,7 @@
           <entry key="HTML" value="2" />
           <entry key="Image" value="3" />
           <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="106" />
+          <entry key="JavaScript" value="114" />
           <entry key="SVG" value="6" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -68,16 +68,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="142" />
-          <entry key="js" value="8842" />
+          <entry key="js" value="9051" />
           <entry key="ts" value="9" />
-          <entry key="txt" value="106" />
+          <entry key="txt" value="109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="142" />
-          <entry key="JavaScript" value="8842" />
-          <entry key="PLAIN_TEXT" value="106" />
+          <entry key="JavaScript" value="9051" />
+          <entry key="PLAIN_TEXT" value="109" />
           <entry key="TypeScript" value="9" />
         </counts>
       </usages-collector>
@@ -91,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="55" column="3" lean-forward="true" selection-start-line="46" selection-end-line="55" selection-end-column="3" />
+            <state relative-caret-position="204">
+              <caret line="30" selection-start-line="30" selection-end-line="35" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -100,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/serverComment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+            <state relative-caret-position="219">
+              <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -115,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/crud/delete/deleteCar.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/crud/delete/deleteThisCar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+            <state relative-caret-position="374">
+              <caret line="61" column="5" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="61" selection-end-column="5" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -130,8 +130,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/comment/deleteComment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="1020">
+              <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/comment/addComment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/comment/deleteThisComment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,7 +219,6 @@
         <option value="$PROJECT_DIR$/src/components/comment.js" />
         <option value="$PROJECT_DIR$/src/components/Sort.js" />
         <option value="$PROJECT_DIR$/src/components/Search.js" />
-        <option value="$PROJECT_DIR$/src/components/comment/deleteComment.js" />
         <option value="$PROJECT_DIR$/config/config.json" />
         <option value="$PROJECT_DIR$/src/components/cars-list.component.ts" />
         <option value="$PROJECT_DIR$/src/components/cars-list.component.js" />
@@ -221,7 +247,9 @@
         <option value="$PROJECT_DIR$/backend/commentSchema.js" />
         <option value="$PROJECT_DIR$/src/components/comment/showComments.js" />
         <option value="$PROJECT_DIR$/src/components/comment/addComment.js" />
+        <option value="$PROJECT_DIR$/src/components/comment/deleteComment.js" />
         <option value="$PROJECT_DIR$/backend/serverComment.js" />
+        <option value="$PROJECT_DIR$/src/components/comment/deleteThisComment.js" />
       </list>
     </option>
   </component>
@@ -431,7 +459,7 @@
       <workItem from="1559073809516" duration="11570000" />
       <workItem from="1559125311664" duration="4409000" />
       <workItem from="1559511153534" duration="8713000" />
-      <workItem from="1559592312336" duration="11502000" />
+      <workItem from="1559592312336" duration="12420000" />
     </task>
     <task id="LOCAL-00001" summary="Add Menu and Login with Google">
       <created>1555031682700</created>
@@ -475,11 +503,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559610529874</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add comments">
+      <created>1559611808542</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559611808542</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139589000" />
+    <option name="totallyTimeSpent" value="140507000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -527,14 +562,10 @@
     <MESSAGE value="Create, delete, read car options" />
     <MESSAGE value="Update option" />
     <MESSAGE value="Read comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Read comments" />
+    <MESSAGE value="Add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comments" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -702,16 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/crud/delete/deleteThisCar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/crud/update/updateCar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
@@ -789,34 +810,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/server.js">
+    <entry file="file://$PROJECT_DIR$/src/components/crud/delete/deleteCar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="55" column="3" lean-forward="true" selection-start-line="46" selection-end-line="55" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/serverComment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/comment/addComment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="65" column="16" lean-forward="true" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/comment/showComments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        <state relative-caret-position="850">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -830,17 +827,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/comment/deleteComment.js">
+    <entry file="file://$PROJECT_DIR$/src/components/comment/showComments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/crud/delete/deleteCar.js">
+    <entry file="file://$PROJECT_DIR$/src/components/comment/deleteComment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="1020">
+          <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/comment/addComment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="30" selection-start-line="30" selection-end-line="35" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/serverComment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/crud/delete/deleteThisCar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="61" column="5" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/comment/deleteThisComment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

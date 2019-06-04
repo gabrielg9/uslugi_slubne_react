@@ -40,6 +40,28 @@ commentRoutes.route('/add').post(function(req, res) {
         });
 });
 
+commentRoutes.route('/delete/:id').delete(function (req, res, next) {
+    Comment.findByIdAndRemove(req.params.id, function (err, cars) {
+        if (!cars)
+            res.status(404).send("data is not found");
+        else
+            cars.delete().then(cars => {
+                res.json('Deleted succesfully');
+            })
+                .catch(err => {
+                    res.status(400).send("Delete not possible");
+                });
+
+    });
+});
+
+commentRoutes.route('/:id').get(function(req, res) {
+    let id = req.params.id;
+    Comment.findById(id, function(err, car) {
+        res.json(car);
+    });
+});
+
 
 
 app.use('/comments', commentRoutes);
