@@ -13,6 +13,7 @@ import Menu from './components/Menu';
 import logo from './logo.svg';
 import car_image from './car_image.jpg';
 import './App.css';
+import openFile from "./components/files/openFile";
 
 /*class App extends Component {
   render() {
@@ -67,8 +68,16 @@ class App extends Component {
                                 <li className="navbar-item">
                                     <Link to="/menu" className="nav-link">Menu</Link>
                                 </li>
+
+                                <li className="navbar-item">
+                                    <Link to="requirement" className="nav-link">Requirement</Link>
+                                </li>
                             </ul>
+                            
                         </div>
+
+
+
                         <GoogleLogin
                             clientId="674230190306-j5ej1onnpfhst1p5k6a9v4l0l8h04bgc.apps.googleusercontent.com"
                             buttonText="Login with Google"
@@ -79,6 +88,8 @@ class App extends Component {
                     <br/>
 
                     <Route path="/menu" exact component={Menu} />
+                    <Route path="/requirement" exact component={openFile} />
+
 
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
