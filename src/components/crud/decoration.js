@@ -3,10 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from 'react-bootstrap/Button'
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import decorationRead from "./read/decorationRead";
-import addDecoration from "./create/addDecoration";
-import updateDecoration from "./update/updateDecoration";
-import deleteDecoration from "./delete/deleteDecoration";
+import decorationRead from "./read/Decoration/decorationRead";
+import addDecoration from "./create/Decoration/addDecoration";
+import updateDecoration from "./update/Decoration/updateDecoration";
+import deleteDecoration from "./delete/Decoration/deleteDecoration";
 
 class decoration extends Component {
     render() {

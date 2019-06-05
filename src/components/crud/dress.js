@@ -3,10 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from 'react-bootstrap/Button'
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import dressRead from "./read/dressRead";
-import addDress from "./create/addDress";
-import updateDress from "./update/updateDress";
-import deleteDress from "./delete/deleteDress";
+import dressRead from "./read/Dress/dressRead";
+import addDress from "./create/Dress/addDress";
+import updateDress from "./update/Dress/updateDress";
+import deleteDress from "./delete/Dress/deleteDress";
 
 class dress extends Component {
     render() {

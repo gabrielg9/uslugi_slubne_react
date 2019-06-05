@@ -3,10 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from 'react-bootstrap/Button'
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import carRead from "./read/carRead";
-import addCar from './create/addCar';
-import deleteCar from "./delete/deleteCar";
-import updateCar from "./update/updateCar";
+import carRead from "./read/Car/carRead";
+import addCar from './create/Car/addCar';
+import deleteCar from "./delete/Car/deleteCar";
+import updateCar from "./update/Car/updateCar";
 
 
 class car extends Component {

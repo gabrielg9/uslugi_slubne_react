@@ -3,10 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from 'react-bootstrap/Button'
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import attractionRead from "./read/attractionRead";
-import addAttraction from "./create/addAttraction";
-import updateAttraction from "./update/updateAttraction";
-import deleteAttraction from "./delete/deleteAttraction";
+import attractionRead from "./read/Attraction/attractionRead";
+import addAttraction from "./create/Attraction/addAttraction";
+import updateAttraction from "./update/Attraction/updateAttraction";
+import deleteAttraction from "./delete/Attraction/deleteAttraction";
 
 class attraction extends Component {
     render() {

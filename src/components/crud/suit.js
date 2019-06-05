@@ -3,10 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from 'react-bootstrap/Button'
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import suitRead from "./read/suitRead";
-import addSuit from "./create/addSuit";
-import updateSuit from "./update/updateSuit";
-import deleteSuit from "./delete/deleteSuit";
+import suitRead from "./read/Suit/suitRead";
+import addSuit from "./create/Suit/addSuit";
+import updateSuit from "./update/Suit/updateSuit";
+import deleteSuit from "./delete/Suit/deleteSuit";
 
 class suit extends Component {
     render() {
